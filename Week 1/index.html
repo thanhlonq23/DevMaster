@@ -10,43 +10,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <style>
-      /* Đảm bảo Carousel chiếm toàn bộ chiều rộng của trang */
-      .carousel {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-      }
-      .carousel-item img {
-        width: 100%; /* Đảm bảo hình ảnh chiếm hết chiều rộng */
-        height: 500px; /* Chiều cao cố định của slide */
-        object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
-      }
-      .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.5); /* Nền mờ cho caption */
-        color: white;
-      }
-      /* Ẩn các chỉ số */
-      .carousel-indicators li {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: #fff;
-        border: 2px solid #fff;
-      }
-
-      .carousel-indicators .active {
-        background-color: #ff7f00; /* Màu cho chấm đang active */
-      }
-    </style>
   </head>
+
   <body>
     <header class="header-container">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
         <!-- Logo -->
         <div class="header-logo">
-          <a href="#" class="d-flex align-items-center text-decoration-none me-4">
-            <img src="./img/logo.png" alt="Website Icon" class="me-2" style="width: 90px" />
+          <a
+            href="#"
+            class="d-flex align-items-center text-decoration-none me-4"
+          >
+            <img
+              src="./img/logo.png"
+              alt="Website Icon"
+              class="me-2"
+              style="width: 150px"
+            />
           </a>
         </div>
 
@@ -115,10 +97,20 @@
 
         <!-- Auth Buttons -->
         <div class="header-auth">
-          <button class="button-login btn btn-outline-light" style="background-color: orange">
+          <button
+            class="button-login btn btn-outline-light"
+            style="background-color: orange"
+          >
             Đăng nhập
           </button>
-          <button class="button-signup btn btn-light me-2" style="color: orange; background-color: inherit; border-color: orange;">
+          <button
+            class="button-signup btn btn-light me-2"
+            style="
+              color: orange;
+              background-color: inherit;
+              border-color: orange;
+            "
+          >
             Đăng ký
           </button>
         </div>
@@ -127,43 +119,630 @@
 
     <div class="container-fluid p-0">
       <!-- Carousel quảng cáo -->
-      <div id="advertisementCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="advertisementCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-bs-target="#advertisementCarousel" data-bs-slide-to="0" class="active"></li>
+          <li
+            data-bs-target="#advertisementCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
           <li data-bs-target="#advertisementCarousel" data-bs-slide-to="1"></li>
           <li data-bs-target="#advertisementCarousel" data-bs-slide-to="2"></li>
           <li data-bs-target="#advertisementCarousel" data-bs-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/banner-slider.jpg" class="d-block w-100" alt="Ad 1" />
+            <img
+              src="./img/banner-slider.jpg"
+              class="d-block w-100"
+              alt="Ad 1"
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/banner-slider.jpg" class="d-block w-100" alt="Ad 2" />
+            <img
+              src="./img/banner-slider.jpg"
+              class="d-block w-100"
+              alt="Ad 2"
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/banner-slider.jpg" class="d-block w-100" alt="Ad 3" />
+            <img
+              src="./img/banner-slider.jpg"
+              class="d-block w-100"
+              alt="Ad 3"
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/banner-slider.jpg" class="d-block w-100" alt="Ad 4" />
+            <img
+              src="./img/banner-slider.jpg"
+              class="d-block w-100"
+              alt="Ad 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/banner-slider.jpg"
+              class="d-block w-100"
+              alt="Ad 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/banner-slider.jpg"
+              class="d-block w-100"
+              alt="Ad 4"
+            />
           </div>
         </div>
-
-        <!-- Controls (Nút điều khiển) -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#advertisementCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#advertisementCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
 
+    <div class="row">
+      <!-- Hàng 1 -->
+      <div class="col-md-3">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-1.png" alt="Icon 1" />
+          <div class="category-description">HOÀN TIỀN TỚI 15% VÀO VÍ</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-2.png" alt="Icon 2" />
+          <div class="category-description">50+ ƯU ĐÃI MỖI THÁNG</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-3.png" alt="Icon 3" />
+          <div class="category-description">ĐẶT DỊCH VỤ NHANH</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-4.png" alt="Icon 4" />
+          <div class="category-description">HƠN 22 THƯƠNG HIỆU</div>
+        </div>
+      </div>
+
+      <!-- Hàng 2 -->
+      <div class="col-md-3 center">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-5.png" alt="Icon 5" />
+          <div class="category-description">HƠN 300+ SPA LÀM ĐẸP</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-6.png" alt="Icon 6" />
+          <div class="category-description">HƠN 250+ ĐỐI TÁC</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-7.png" alt="Icon 7" />
+          <div class="category-description">HIWN 1259+ KHÁCH HÀNG</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="category-item">
+          <img src="./img/icon/home-icon-8.png" alt="Icon 8" />
+          <div class="category-description">HƠN 25 THÀNH PHỐ</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sửa phần container-news -->
+    <div class="container-news my-5">
+      <!-- Tiêu đề -->
+      <h2 class="section-title">
+        <hr
+          style="
+            width: 70px;
+            height: 2px;
+            border: none;
+            background-color: #ff6600;
+          "
+        />
+        ƯU ĐÃI HOT
+      </h2>
+      <div id="newsSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="./img/endow-1.jpg"
+                    style="height: 300px"
+                    class="news-img card-img-top"
+                    alt="News 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ưu Đãi Đặc Biệt Tháng 1</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="post-date">
+                        <img
+                          src="./img/icon/date.png"
+                          style="width: 20px; height: 20px; margin-right: 8px"
+                          alt="icon"
+                          class="post-date-icon"
+                        />Ngày đăng: 05/01/2025
+                      </p>
+                      <button class="btn btn-read-more">Xem thêm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="./img/endow-2.jpg"
+                    style="height: 300px"
+                    class="news-img card-img-top"
+                    alt="News 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ưu Đãi Đặc Biệt Tháng 1</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="post-date">
+                        <img
+                          src="./img/icon/date.png"
+                          style="width: 20px; height: 20px; margin-right: 8px"
+                          alt="icon"
+                          class="post-date-icon"
+                        />Ngày đăng: 05/01/2025
+                      </p>
+                      <button class="btn btn-read-more">Xem thêm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="./img/endow-3.jpg"
+                    style="height: 300px"
+                    class="news-img card-img-top"
+                    alt="News 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ưu Đãi Đặc Biệt Tháng 1</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="post-date">
+                        <img
+                          src="./img/icon/date.png"
+                          style="width: 20px; height: 20px; margin-right: 8px"
+                          alt="icon"
+                          class="post-date-icon"
+                        />Ngày đăng: 05/01/2025
+                      </p>
+                      <button class="btn btn-read-more">Xem thêm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide tiếp theo -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="./img/endow-1.jpg"
+                    style="height: 300px"
+                    class="news-img card-img-top"
+                    alt="News 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ưu Đãi Đặc Biệt Tháng 1</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="post-date">
+                        <img
+                          src="./img/icon/date.png"
+                          style="width: 20px; height: 20px; margin-right: 8px"
+                          alt="icon"
+                          class="post-date-icon"
+                        />Ngày đăng: 05/01/2025
+                      </p>
+                      <button class="btn btn-read-more">Xem thêm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="./img/endow-2.jpg"
+                    style="height: 300px"
+                    class="news-img card-img-top"
+                    alt="News 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ưu Đãi Đặc Biệt Tháng 1</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="post-date">
+                        <img
+                          src="./img/icon/date.png"
+                          style="width: 20px; height: 20px; margin-right: 8px"
+                          alt="icon"
+                          class="post-date-icon"
+                        />Ngày đăng: 05/01/2025
+                      </p>
+                      <button class="btn btn-read-more">Xem thêm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="./img/endow-3.jpg"
+                    style="height: 300px"
+                    class="news-img card-img-top"
+                    alt="News 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ưu Đãi Đặc Biệt Tháng 1</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="post-date">
+                        <img
+                          src="./img/icon/date.png"
+                          style="width: 20px; height: 20px; margin-right: 8px"
+                          alt="icon"
+                          class="post-date-icon"
+                        />Ngày đăng: 05/01/2025
+                      </p>
+                      <button class="btn btn-read-more">Xem thêm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Nút điều khiển -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#newsSlider"
+          data-bs-slide="prev"
+        >
+          <img src="./img/icon/btn-slide.png" alt="Previous" height="40" />
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#newsSlider"
+          data-bs-slide="next"
+        >
+          <img
+            src="./img/icon/btn-slide.png"
+            alt="Next"
+            height="40"
+            class="flip-icon"
+          />
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Tiêu đề -->
+      <h2 class="section-title">
+        <hr
+          style="
+            width: 70px;
+            height: 2px;
+            border: none;
+            background-color: #ff6600;
+          "
+        />
+        CHỌN THEO THƯƠNG HIỆU
+      </h2>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card custom-card">
+            <img
+              src="./img/brand-1.jpg"
+              class="custom-news-img card-img-top"
+              alt="News 1"
+            />
+            <div class="card-body">
+              <h5 class="custom-card-title">Ưu Đãi Đặc Biệt Tháng 1</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="custom-post-date">
+                  <img
+                    src="./img/icon/date.png"
+                    alt="icon"
+                    class="custom-post-date-icon"
+                  />Ngày đăng: 05/01/2025
+                </p>
+                <button class="btn custom-btn-read-more">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bài viết tiếp theo bị ẩn ban đầu -->
+        <div class="col-12 col-sm-6 col-md-4 hidden">
+          <div class="card custom-card">
+            <img
+              src="./img/brand-2.jpg"
+              class="custom-news-img card-img-top"
+              alt="News 2"
+            />
+            <div class="card-body">
+              <h5 class="custom-card-title">Ưu Đãi Đặc Biệt Tháng 2</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="custom-post-date">
+                  <img
+                    src="./img/icon/date.png"
+                    alt="icon"
+                    class="custom-post-date-icon"
+                  />Ngày đăng: 10/01/2025
+                </p>
+                <button class="btn custom-btn-read-more">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Các bài viết ẩn tiếp theo -->
+        <div class="col-12 col-sm-6 col-md-4 hidden">
+          <div class="card custom-card">
+            <img
+              src="./img/brand-3.jpg"
+              class="custom-news-img card-img-top"
+              alt="News 3"
+            />
+            <div class="card-body">
+              <h5 class="custom-card-title">Ưu Đãi Đặc Biệt Tháng 3</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="custom-post-date">
+                  <img
+                    src="./img/icon/date.png"
+                    alt="icon"
+                    class="custom-post-date-icon"
+                  />Ngày đăng: 15/01/2025
+                </p>
+                <button class="btn custom-btn-read-more">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Các bài viết ẩn tiếp theo -->
+        <div class="col-12 col-sm-6 col-md-4 hidden">
+          <div class="card custom-card">
+            <img
+              src="./img/brand-4.jpg"
+              class="custom-news-img card-img-top"
+              alt="News 4"
+            />
+            <div class="card-body">
+              <h5 class="custom-card-title">Ưu Đãi Đặc Biệt Tháng 4</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="custom-post-date">
+                  <img
+                    src="./img/icon/date.png"
+                    alt="icon"
+                    class="custom-post-date-icon"
+                  />Ngày đăng: 15/01/2025
+                </p>
+                <button class="btn custom-btn-read-more">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Các bài viết ẩn tiếp theo -->
+        <div class="col-12 col-sm-6 col-md-4 hidden">
+          <div class="card custom-card">
+            <img
+              src="./img/brand-5.jpg"
+              class="custom-news-img card-img-top"
+              alt="News 5"
+            />
+            <div class="card-body">
+              <h5 class="custom-card-title">Ưu Đãi Đặc Biệt Tháng 5</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="custom-post-date">
+                  <img
+                    src="./img/icon/date.png"
+                    alt="icon"
+                    class="custom-post-date-icon"
+                  />Ngày đăng: 15/01/2025
+                </p>
+                <button class="btn custom-btn-read-more">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 hidden">
+          <div class="card custom-card">
+            <img
+              src="./img/brand-5.jpg"
+              class="custom-news-img card-img-top"
+              alt="News 5"
+            />
+            <div class="card-body">
+              <h5 class="custom-card-title">Ưu Đãi Đặc Biệt Tháng 5</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="custom-post-date">
+                  <img
+                    src="./img/icon/date.png"
+                    alt="icon"
+                    class="custom-post-date-icon"
+                  />Ngày đăng: 15/01/2025
+                </p>
+                <button class="btn custom-btn-read-more">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nút "Xem thêm" -->
+        <div class="col-12 text-center">
+          <button id="loadMoreBtn" class="btn btn-primary">
+            Xem thêm <i class="bi bi-caret-down-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="brand-container">
+        <div class="row">
+          <!-- Thương hiệu 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="brand-item">
+              <img
+                src="./img/icon/brand-1.png"
+                class="brand-image"
+                alt="Brand 1"
+              />
+            </div>
+          </div>
+          <!-- Thương hiệu 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="brand-item">
+              <img
+                src="./img/icon/brand-2.png"
+                class="brand-image"
+                alt="Brand 2"
+              />
+            </div>
+          </div>
+          <!-- Thương hiệu 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="brand-item">
+              <img
+                src="./img/icon/brand-3.png"
+                class="brand-image"
+                alt="Brand 3"
+              />
+            </div>
+          </div>
+          <!-- Thương hiệu 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="brand-item">
+              <img
+                src="./img/icon/brand-4.png"
+                class="brand-image"
+                alt="Brand 4"
+              />
+            </div>
+          </div>
+          <!-- Thương hiệu 5 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="brand-item">
+              <img
+                src="./img/icon/brand-5.png"
+                class="brand-image"
+                alt="Brand 5"
+              />
+            </div>
+          </div>
+          <!-- Thương hiệu 6 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="brand-item">
+              <img
+                src="./img/icon/brand-6.png"
+                class="brand-image"
+                alt="Brand 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>LIÊN HỆ</h5>
+            <p>58 Tố Hữu, Thanh Xuân, Hà Nội</p>
+            <p>(024).3783.5639</p>
+            <p>info@adcvietnam.net</p>
+            <p><a href="http://www.adcvietnam.net">www.adcvietnam.net</a></p>
+          </div>
+          <div class="col-md-3">
+            <h5>VỀ LESKIN</h5>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Sứ mệnh</a></p>
+            <p><a href="#">Tăng trưởng</a></p>
+            <p><a href="#">Quan hệ cổ đông</a></p>
+          </div>
+          <div class="col-md-3">
+            <h5>TẢI APP NGAY</h5>
+            <a href="#"
+              ><img src="./img/app-android.jpg" style="border-radius: 10px;" alt="Google Play"
+            /></a>
+            <a href="#"><img src="./img/app-ios.jpg" style="border-radius: 10px;" alt="App Store" /></a>
+          </div>
+          <div class="col-md-3">
+            <h5>NEWLETTER</h5>
+            <div class="newsletter">
+              <input type="email" placeholder="Nhập email" />
+              <button type="submit">></button>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-12 text-center">
+            <p>© 2019 Leskin. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("loadMoreBtn")
+        .addEventListener("click", function () {
+          // Lấy tất cả các thẻ với class 'hidden'
+          const hiddenCards = document.querySelectorAll(".hidden");
+
+          // Hiển thị các thẻ đó
+          hiddenCards.forEach((card) => {
+            card.classList.remove("hidden");
+          });
+
+          // Ẩn nút "Xem thêm" nếu không còn thẻ ẩn
+          if (document.querySelectorAll(".hidden").length === 0) {
+            document.getElementById("loadMoreBtn").style.display = "none";
+          }
+        });
+    </script>
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

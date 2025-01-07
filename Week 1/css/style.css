@@ -4,6 +4,8 @@ header {
   background-position: center; /* Căn giữa hình ảnh */
   background-repeat: no-repeat; /* Không lặp lại hình ảnh */
   color: white; /* Màu chữ trắng để nổi bật trên nền */
+  padding: 10px;
+  border-top: 5px orange;
 }
 
 /* Tùy chỉnh thêm */
@@ -43,7 +45,7 @@ header {
 }
 
 .search-bar button:hover {
-  background: #0056b3; /* Màu nền khi hover */
+  background: #f59403; /* Màu nền khi hover */
 }
 
 /* Chỉnh sửa cho menu điều hướng */
@@ -57,7 +59,6 @@ header {
 }
 
 .nav-item i {
-  font-size: 3030x; /* Kích thước biểu tượng */
   margin-bottom: 5px; /* Khoảng cách giữa biểu tượng và tên */
   color: #666666;
 }
@@ -75,6 +76,7 @@ header {
 
 .nav-item a:hover {
   color: #007bff; /* Màu chữ khi hover */
+  transform: scale(1.05);
 }
 
 /* Tùy chỉnh cho layout của từng nav-item */
@@ -129,5 +131,247 @@ header {
 }
 
 .carousel-indicators .active {
-  background-color: #ff7f00; /* Màu cho chấm đang active */
+  background-color: black; /* Màu cho chấm đang active */
+}
+
+/* Đảm bảo Carousel chiếm toàn bộ chiều rộng của trang */
+.carousel {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.carousel-item img {
+  width: 100%; /* Đảm bảo hình ảnh chiếm hết chiều rộng */
+  height: 500px; /* Chiều cao cố định của slide */
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Nền mờ cho caption */
+  color: white;
+}
+/* Ẩn các chỉ số */
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Danh muc */
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  text-align: center; /* Căn giữa nội dung */
+  transition: transform 0.3s;
+  width: 100%; /* Đảm bảo phần tử chiếm hết chiều rộng */
+}
+.category-item:hover {
+  transform: scale(1.05);
+}
+
+.category-item img {
+  width: 50px; /* Kích thước của icon */
+  margin-right: 15px; /* Khoảng cách giữa icon và mô tả */
+}
+
+.category-item .category-description {
+  font-size: 16px;
+  font-weight: 600;
+  width: 30%;
+}
+
+.row {
+  margin: 2%;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-top: 50px; /* Khoảng cách với phần nội dung trên */
+}
+
+.carousel {
+  margin-top: 20px; /* Khoảng cách giữa tiêu đề và slider */
+}
+
+.container-news {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Giới hạn vùng click */
+}
+
+.carousel-control-prev {
+  left: -30px; /* Di chuyển nút trước ra ngoài bên trái */
+}
+
+.carousel-control-next {
+  right: -30px; /* Di chuyển nút tiếp theo ra ngoài bên phải */
+}
+
+.btn-read-more {
+  border-color: orange;
+  color: #f59403;
+  border-radius: 20px;
+}
+
+.btn-read-more:hover {
+  border-color: orange;
+  color: #f59403;
+}
+
+.post-date {
+  margin-bottom: 0;
+  margin-left: 8px; /* Khoảng cách giữa icon và ngày đăng */
+}
+
+.post-date-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.flip-icon {
+  transform: scaleX(-1); /* Đảo ngược ảnh theo chiều ngang */
+}
+
+.section-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 45px;
+  color: #333;
+}
+
+.custom-card {
+  margin-bottom: 40px;
+}
+
+.custom-news-img {
+  height: 300px; /* Đặt chiều cao cho ảnh */
+}
+
+.custom-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Màu sắc của tiêu đề */
+}
+
+.custom-post-date {
+  font-size: 14px;
+  color: #666; /* Màu chữ cho ngày đăng */
+}
+
+.custom-post-date-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px; /* Khoảng cách giữa icon và ngày */
+}
+
+.custom-btn-read-more {
+  color: orange; /* Màu chữ */
+  border: 1px solid orange; /* Viền màu cam */
+  border-radius: 20px; /* Bo tròn góc */
+  cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+.custom-btn-read-more:hover {
+  background-color: #f59403; /* Màu nền khi hover */
+  color: orange; /* Màu chữ khi hover */
+}
+
+.hidden-card {
+  display: none;
+}
+
+#loadMoreBtn {
+  background-color: #d86a51; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px; /* Bo góc */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 250px;
+}
+
+#loadMoreBtn:hover {
+  background-color: #c13b1f; /* Màu nền khi hover */
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .newsletter input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer .newsletter button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer .social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer .social-icons a:hover {
+  color: #007bff;
 }
