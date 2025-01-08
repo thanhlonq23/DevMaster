@@ -1,0 +1,139 @@
+header {
+  background-size: cover; /* Hình ảnh sẽ phủ kín vùng header */
+  background-position: center; /* Căn giữa hình ảnh */
+  background-image: url("../img/header.jpg"); /* Đường dẫn tới hình ảnh */
+  padding: 1%;
+}
+
+/* Tùy chỉnh thêm */
+.nav-link {
+  color: white !important; /* Màu chữ của menu */
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Tùy chỉnh ô tìm kiếm */
+.search-bar {
+  border-radius: 50px; /* Bo tròn */
+  overflow: hidden; /* Đảm bảo các thành phần không vượt ra ngoài */
+  display: flex; /* Để các phần tử nằm cùng dòng */
+  border: 1px solid orange; /* Viền màu cam */
+  min-width: 500px;
+}
+
+.search-bar input {
+  border: none; /* Xóa viền mặc định */
+  box-shadow: none; /* Xóa bóng */
+  border-radius: 50px 0 0 50px; /* Bo tròn góc trái */
+  flex-grow: 1; /* Để ô tìm kiếm giãn rộng */
+  padding: 0.5rem; /* Khoảng cách trong input */
+  border-left: 1px solid orange; /* Viền trái màu cam để phân cách với nút */
+}
+
+.search-bar button {
+  border: red; /* Xóa viền nút */
+  background: orange; /* Màu nền nút */
+  color: white; /* Màu chữ trắng */
+  border-radius: 0 50px 50px 0; /* Bo tròn góc phải */
+  padding: 0.5rem 1rem; /* Khoảng cách nút */
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #f59403; /* Màu nền khi hover */
+}
+
+/* Chỉnh sửa cho menu điều hướng */
+.nav-item {
+  display: flex; /* Sử dụng flex để căn giữa các phần tử */
+  flex-direction: column; /* Đặt các phần tử thành cột */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  text-align: center; /* Căn giữa chữ */
+  margin: 0 20px; /* Khoảng cách giữa các item */
+}
+
+.nav-item i {
+  margin-bottom: 5px; /* Khoảng cách giữa biểu tượng và tên */
+  color: #666666;
+}
+
+.nav-item span {
+  color: #666666;
+}
+
+.nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #333; /* Màu chữ */
+  font-size: 14px;
+}
+
+.nav-item a:hover {
+  color: #007bff; /* Màu chữ khi hover */
+  transform: scale(1.05);
+}
+
+/* Tùy chỉnh cho layout của từng nav-item */
+.nav-item .icon-text {
+  display: flex;
+  flex-direction: column; /* Đảm bảo icon và tên nằm theo chiều dọc */
+  align-items: center; /* Căn giữa nội dung */
+  justify-content: center;
+}
+
+.nav-item .icon-text i {
+  font-size: 35px; /* Kích thước lớn cho icon */
+}
+
+/* Sử dụng flexbox để căn đều các phần tử trong header */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Căn đều không gian giữa các phần tử */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  width: 100%; /* Đảm bảo chiều rộng của container chiếm hết không gian */
+  border-bottom: 4px solid orange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo,
+.header-search,
+.header-nav,
+.header-auth {
+  flex-grow: 1; /* Các phần tử này sẽ giãn ra để chiếm đều không gian */
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung trong các phần tử */
+}
+
+.header-search {
+  flex-grow: 2; /* Tăng độ rộng của ô tìm kiếm */
+}
+
+.header-nav {
+  justify-content: space-evenly; /* Đảm bảo các item được phân bổ đều nhau */
+}
+
+.header-auth {
+  gap: 20px; /* Khoảng cách giữa các nút */
+}
+
+/* Header-1 */
+.dropdown-toggle::after {
+  display: none;
+}
+.custom-dropdown {
+  background-color: whitesmoke; /* Light orange background */
+  border-radius: 50px;
+  padding: 5px 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 10px solid none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.custom-dropdown .user-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}

@@ -1,0 +1,83 @@
+<header class="header-container">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <div class="header-logo">
+            <a href="#" class="d-flex align-items-center text-decoration-none me-4">
+                <img src="./img/logo.png" alt="Website Icon" class="me-2" style="object-fit: cover" />
+            </a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="header-search flex-grow-1 mx-3">
+            <form class="d-flex">
+                <div class="search-bar d-flex">
+                    <input type="text" class="form-control" placeholder="Nhập nội dung tìm kiếm..."
+                        aria-label="Search" />
+                    <button type="submit" class="px-3">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="header-nav">
+            <ul class="nav d-flex me-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="icon-text">
+                            <i class="bi bi-house-door"></i>
+                            <span>Trang chủ</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="icon-text">
+                            <i class="bi bi-info-circle"></i>
+                            <span>Giới thiệu</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="icon-text">
+                            <i class="bi bi-gift"></i>
+                            <span>Ưu đãi</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="icon-text">
+                            <i class="bi bi-megaphone"></i>
+                            <span>Tin tức</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="icon-text">
+                            <i class="bi bi-envelope"></i>
+                            <span>Liên hệ</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Auth Buttons -->
+        <div class="header-auth">
+            <div class="dropdown">
+                <button class="btn custom-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="user-icon" style="background-color: orange; border-radius: 100%; padding: 0px 5px 0px 5px;"><i class="bi bi-person-fill"></i></span> <h6 style="color: black;">User Name</h6>
+                    <i class="bi bi-chevron-down" style="padding-left:10px ;"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+</header>
