@@ -1,11 +1,8 @@
 header {
-  background-image: url("../img/header.jpg"); /* Đường dẫn tới hình ảnh */
   background-size: cover; /* Hình ảnh sẽ phủ kín vùng header */
   background-position: center; /* Căn giữa hình ảnh */
-  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-  color: white; /* Màu chữ trắng để nổi bật trên nền */
-  padding: 10px;
-  border-top: 5px orange;
+  background-image: url("../img/header.jpg"); /* Đường dẫn tới hình ảnh */
+  padding: 1%;
 }
 
 /* Tùy chỉnh thêm */
@@ -92,7 +89,7 @@ header {
 }
 
 /* Sử dụng flexbox để căn đều các phần tử trong header */
-.container {
+.header-container {
   display: flex;
   justify-content: space-between; /* Căn đều không gian giữa các phần tử */
   align-items: center; /* Căn giữa theo chiều dọc */
@@ -120,13 +117,8 @@ header {
   gap: 20px; /* Khoảng cách giữa các nút */
 }
 
-/* Ẩn các chỉ số */
+/* Slide */
 .carousel-indicators li {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 2px solid #fff;
   list-style: none;
 }
 
@@ -157,6 +149,11 @@ header {
   border: 2px solid #fff;
 }
 
+.d-block {
+  width: 100%; /* Đặt chiều rộng theo khung mong muốn */
+  aspect-ratio: 16 / 9; /* Giữ tỉ lệ 16:9 */
+  object-fit: cover;
+}
 /* Danh muc */
 .category-item {
   display: flex;
@@ -207,7 +204,7 @@ hr {
 }
 
 .carousel {
-  margin-top: 20px; /* Khoảng cách giữa tiêu đề và slider */
+  margin-top: 2px;
 }
 
 .container-news {
@@ -322,27 +319,25 @@ hr {
   background-color: #c13b1f; /* Màu nền khi hover */
 }
 
+/* Footer */
 .footer {
-  background-color: #333;
   color: #fff;
-  padding: 40px 0;
   font-family: Arial, sans-serif;
   width: 100%;
   position: relative;
-  left: 0;
-  bottom: 0;
 }
-
 .footer h5 {
   font-size: 18px;
   margin-bottom: 20px;
+  color: #c4baba;
 }
 
-.footer p,
+.footer-1 p,
+.footer-2 p,
 .footer a {
   font-size: 14px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #9e9797;
   text-decoration: none;
 }
 
@@ -356,6 +351,7 @@ hr {
   margin-right: 5px;
   border: none;
   border-radius: 3px;
+  background-color: #837e7e;
 }
 
 .footer .newsletter button {
@@ -369,9 +365,70 @@ hr {
 .footer .social-icons a {
   margin-right: 15px;
   font-size: 20px;
-  color: #fff;
+  color: #9e9797;
 }
 
 .footer .social-icons a:hover {
   color: #007bff;
 }
+.footer-1 {
+  background-color: #242323;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-2 {
+  background-color: black;
+  padding: 5px 0;
+  padding-top: 20px;
+  width: 100%;
+  position: relative;
+}
+
+/* Phong cách cho container */
+.newsletter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden; /* Đảm bảo viền liền mạch */
+  background-color: #9e9797;
+
+}
+
+/* Phong cách cho input */
+.newsletter-input {
+  flex: 1; /* Input sẽ chiếm hết khoảng trống */
+  padding: 10px 15px;
+  border: none; /* Loại bỏ viền gốc */
+  font-size: 16px;
+  color: #333;
+}
+
+.newsletter-input::placeholder {
+  color: #9e9797;
+  font-style: italic;
+}
+
+/* Phong cách cho nút */
+.newsletter-btn {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-img {
+  filter: brightness(0) invert(1);
+}
+

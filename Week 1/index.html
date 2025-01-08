@@ -9,7 +9,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
@@ -27,7 +32,7 @@
               src="./img/logo.png"
               alt="Website Icon"
               class="me-2"
-              style="width: 150px"
+              style="object-fit: cover"
             />
           </a>
         </div>
@@ -155,20 +160,6 @@
               src="./img/banner-slider.jpg"
               class="d-block w-100"
               alt="Ad 3"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/banner-slider.jpg"
-              class="d-block w-100"
-              alt="Ad 4"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/banner-slider.jpg"
-              class="d-block w-100"
-              alt="Ad 4"
             />
           </div>
           <div class="carousel-item">
@@ -677,67 +668,80 @@
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </div>
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h5>LIÊN HỆ</h5>
-            <p>58 Tố Hữu, Thanh Xuân, Hà Nội</p>
-            <p>(024).3783.5639</p>
-            <p>info@adcvietnam.net</p>
-            <p><a href="http://www.adcvietnam.net">www.adcvietnam.net</a></p>
-          </div>
-          <div class="col-md-3">
-            <h5>VỀ LESKIN</h5>
-            <p><a href="#">Về chúng tôi</a></p>
-            <p><a href="#">Sứ mệnh</a></p>
-            <p><a href="#">Tăng trưởng</a></p>
-            <p><a href="#">Quan hệ cổ đông</a></p>
-          </div>
-          <div class="col-md-3">
-            <h5>TẢI APP NGAY</h5>
-            <a href="#"
-              ><img src="./img/app-android.jpg" style="border-radius: 10px;" alt="Google Play"
-            /></a>
-            <a href="#"><img src="./img/app-ios.jpg" style="border-radius: 10px;" alt="App Store" /></a>
-          </div>
-          <div class="col-md-3">
-            <h5>NEWLETTER</h5>
-            <div class="newsletter">
-              <input type="email" placeholder="Nhập email" />
-              <button type="submit">></button>
+      <div class="footer-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>LIÊN HỆ</h5>
+              <p>58 Tố Hữu, Thanh Xuân, Hà Nội</p>
+              <p>(024).3783.5639</p>
+              <p>info@adcvietnam.net</p>
+              <p><a href="http://www.adcvietnam.net">www.adcvietnam.net</a></p>
             </div>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="col-md-3">
+              <h5>VỀ LESKIN</h5>
+              <p><a href="#">Về chúng tôi</a></p>
+              <p><a href="#">Sứ mệnh</a></p>
+              <p><a href="#">Tăng trưởng</a></p>
+              <p><a href="#">Quan hệ cổ đông</a></p>
             </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-12 text-center">
-            <p>© 2019 Leskin. All rights reserved.</p>
+            <div class="col-md-3">
+              <h5>TẢI APP NGAY</h5>
+              <a href="#"
+                ><img
+                  src="./img/app-android.jpg"
+                  style="border-radius: 10px"
+                  alt="Google Play" /></a
+              ><br />
+              <a href="#"
+                ><img
+                  src="./img/app-ios.jpg"
+                  style="border-radius: 10px; margin-top: 10px"
+                  alt="App Store"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <h5>NEWLETTER</h5>
+              <p><a href="#">Đăng ký để nhận ưu đãi hàng tháng</a></p>
+
+              <div class="newsletter">
+                <input
+                  type="email"
+                  placeholder="Nhập email"
+                  class="newsletter-input"
+                />
+                <button
+                  type="submit"
+                  style="background-color: #9e9797"
+                  class="newsletter-btn"
+                >
+                  <img
+                    src="img/icon/fly.png"
+                    style="filter: brightness(0) invert(1)"
+                    alt="Gửi"
+                  />
+                </button>
+              </div>
+
+              <br />
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="footer-2">
+        <div class="col-md-12 text-center">
+          <p>© 2019 Leskin. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
-    <script>
-      document
-        .getElementById("loadMoreBtn")
-        .addEventListener("click", function () {
-          // Lấy tất cả các thẻ với class 'hidden'
-          const hiddenCards = document.querySelectorAll(".hidden");
 
-          // Hiển thị các thẻ đó
-          hiddenCards.forEach((card) => {
-            card.classList.remove("hidden");
-          });
+    <script src="./js/index.js"></script>
 
-          // Ẩn nút "Xem thêm" nếu không còn thẻ ẩn
-          if (document.querySelectorAll(".hidden").length === 0) {
-            document.getElementById("loadMoreBtn").style.display = "none";
-          }
-        });
-    </script>
     <!-- Bootstrap Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
