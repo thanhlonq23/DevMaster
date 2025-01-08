@@ -1,0 +1,25 @@
+/* Nút mặc định */
+.pagination .page-link {
+  background-color: white; /* Nền trắng */
+  color: black; /* Màu chữ đen */
+  border: 1px solid #ddd; /* Viền nhạt */
+}
+
+/* Nút khi được chọn (active) */
+.pagination .page-item.active .page-link {
+  background-color: #ff9800; /* Màu cam */
+  color: white; /* Màu chữ trắng */
+  border-color: #ff9800; /* Viền cam */
+}
+
+/* Nút bị vô hiệu hóa */
+.pagination .page-item.disabled .page-link {
+  background-color: #f5f5f5; /* Nền xám nhạt */
+  color: #ccc; /* Màu chữ xám nhạt */
+  border-color: #f5f5f5;
+}
+
+.container-news a {
+  text-decoration: none;
+  color: black;
+}
