@@ -1,0 +1,55 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  background-color: white;
+  width: 390px;
+  height: 60px;
+  margin-top: -36px;
+  color: black;
+  border: none;
+  border-bottom: rgb(55, 54, 54) dashed 1px;
+  font-size: 15px;
+}
+
+.list li img {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.btn_change {
+  width: 400px;
+  height: 35px;
+  border: none;
+  margin-left: -15px;
+  border: rgb(165, 160, 160) solid 1px;
+  border-radius: 3px;
+}
+
+.inf p {
+  width: 150px;
+}
+
+.newPassword div {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bg-orange {
+  background-color: orange !important;
+}
+
+.btn-orange {
+  background-color: orange;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: darkorange;
+}

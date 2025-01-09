@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/account.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <hr
+      style="
+        height: 5px;
+        border: none;
+        background-color: rgb(243, 169, 31);
+        margin-top: 0px;
+        margin-bottom: 0px;
+      "
+    />
+
+    <!-- Main Content -->
+    <div class="container">
+      <div style="margin: 20px 10px 20px 0px">
+        <span>
+          <a href="" style="text-decoration: none; color: black">Trang Chủ</a> >
+          <a href="" style="text-decoration: none; color: black">Tin tức</a>
+        </span>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Left Sidebar -->
+        <div class="col-md-3" style="property: inherit">
+          <ul
+            class="list-group shadow"
+            style="border-radius: 5px; height: auto"
+          >
+            <li class="list-group-item bg-orange text-white fw-bold">
+              Thông tin tài khoản
+            </li>
+            <li class="list-group-item text-orange">
+              <i class="bi bi-person-circle"></i>
+              Thông tin cá nhân
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-key"></i>
+              Thông tin bảo mật
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-wallet2"></i>
+              Thông tin ví
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-clock-history"></i>
+              Lịch sử giao dịch
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-shield-check"></i>
+              Điều khoản sử dụng
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-journal-text"></i>
+              Hướng dẫn sử dụng
+            </li>
+            <li class="list-group-item" style="border-radius: 0 0 5px 5px">
+              <i class="bi bi-box-arrow-left"></i>
+              Đăng xuất
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-9">
+          <div
+            style="
+              background-color: white;
+              height:92%;
+              width: 100%;
+              box-shadow: 0 0 1px black;
+              padding: 20px;
+            "
+          >
+            <!-- Shared Layout Section -->
+            <div
+              class="shared-layout"
+              style="
+                padding: 0px 20px;
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <h5 style="font-size: 18px; font-weight: bold">
+                ĐỔI MẶT KHẨU CỦA BẠN
+              </h5>
+            </div>
+
+            <!-- Wrapper Container -->
+            <div
+              class="profile-container"
+              style="display: flex; gap: 20px; padding: 20px 20px 0px 20px"
+            >
+              <!-- Form Section -->
+              <div class="form-section" style="flex: 1">
+                <form>
+                  <div class="row mb-3">
+                    <label
+                      for="phone"
+                      class="col-sm-4 col-form-label text-start"
+                    >
+                      <b style="color: #888">Mật khẩu hiện tại</b>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="phone" />
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label
+                      for="email"
+                      class="col-sm-4 col-form-label text-start"
+                    >
+                      <b style="color: #888">Mật khẩu mới</b>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="email" />
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label
+                      for="address"
+                      class="col-sm-4 col-form-label text-start"
+                    >
+                      <b style="color: #888">Xác nhận mật khẩu</b>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="address" />
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8 text-start" style="margin-left: 33%">
+                      <button
+                        type="submit"
+                        class="btn btn-primary w-50"
+                        style="background-color: orange; border: none"
+                      >
+                        CẬP NHẬT
+                      </button>
+                      <p style="margin-top: 15px; font-size: 14px">
+                        <img
+                          src="/Week_1/resource/image/icon/icon/stick-3.png"
+                          alt=""
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Image Section -->
+              <div
+                class="image-section"
+                style="width: 280px; text-align: center"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="js/load.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
+</html>

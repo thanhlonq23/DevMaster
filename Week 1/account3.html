@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/account.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <hr
+      style="
+        height: 5px;
+        border: none;
+        background-color: rgb(243, 169, 31);
+        margin-top: 0px;
+        margin-bottom: 0px;
+      "
+    />
+
+    <!-- Main Content -->
+    <div class="container">
+      <div style="margin: 20px 10px 20px 0px">
+        <span>
+          <a href="" style="text-decoration: none; color: black">Trang Chủ</a> >
+          <a href="" style="text-decoration: none; color: black">Tin tức</a>
+        </span>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Left Sidebar -->
+        <div class="col-md-3" style="property: inherit">
+          <ul
+            class="list-group shadow"
+            style="border-radius: 5px; height: auto"
+          >
+            <li class="list-group-item bg-orange text-white fw-bold">
+              Thông tin tài khoản
+            </li>
+            <li class="list-group-item text-orange">
+              <i class="bi bi-person-circle"></i>
+              Thông tin cá nhân
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-key"></i>
+              Thông tin bảo mật
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-wallet2"></i>
+              Thông tin ví
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-clock-history"></i>
+              Lịch sử giao dịch
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-shield-check"></i>
+              Điều khoản sử dụng
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-journal-text"></i>
+              Hướng dẫn sử dụng
+            </li>
+            <li class="list-group-item" style="border-radius: 0 0 5px 5px">
+              <i class="bi bi-box-arrow-left"></i>
+              Đăng xuất
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-9">
+          <div
+            style="
+              background-color: white;
+              height: 100%;
+              width: 100%;
+              box-shadow: 0 0 1px black;
+            "
+          >
+            <div class="col-7" style="margin-top: -18px">
+              <div class="container my-4">
+                <!-- Tabs Header -->
+                <ul
+                  class="nav nav-tabs"
+                  id="myTab"
+                  role="tablist"
+                  style="height: 41px; border: none"
+                >
+                  <li class="nav-item" role="presentation" style="">
+                    <button
+                      class="nav-link active"
+                      id="voucher-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#voucher"
+                      type="button"
+                      role="tab"
+                      style="color: black"
+                    >
+                      <i class="bi bi-tag"> Voucher</i>
+                      <span style="color: orange">02</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="coupon-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#coupon"
+                      type="button"
+                      role="tab"
+                      style="color: black; margin-left: -36px"
+                    >
+                      <i class="bi bi-gift">Coupon</i>
+                      <span style="color: orange">02</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="points-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#points"
+                      type="button"
+                      role="tab"
+                      style="color: black; margin-left: -36px"
+                    >
+                      <i class="bi bi-star">Điểm</i>
+                      <span style="color: orange">2456</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <!-- Tabs Content -->
+                <div class="tab-content mt-4">
+                  <div
+                    class="tab-pane fade show active"
+                    id="voucher"
+                    role="tabpanel"
+                    style="margin-top: -24.1px; width: 840px"
+                  >
+                    <!-- 1 -->
+                    <div class="card mb-3" style="border-radius: 0px">
+                      <div
+                        class="row g-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            border: orange solid 2px;
+                            border-radius: 100px;
+                            margin-left: -35px;
+                          "
+                        >
+                          <i
+                            class="bi bi-pencil"
+                            style="font-size: 2rem; color: orange"
+                          ></i>
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              Voucher dịch vụ chăm sóc da mặt công nghệ mới
+                            </h5>
+                            <p class="card-text text-muted">
+                              05/07/19 - 31/08/19
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                        >
+                          <a
+                            href="#"
+                            style="
+                              text-decoration: none;
+                              color: black;
+                              margin-right: -100px;
+                            "
+                            >Chi tiết ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div
+                      class="card mb-3"
+                      style="border-radius: 0px; margin-top: -20px"
+                    >
+                      <div
+                        class="row g-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            border: orange solid 2px;
+                            border-radius: 100px;
+                            margin-left: -35px;
+                          "
+                        >
+                          <i
+                            class="bi bi-pencil"
+                            style="font-size: 2rem; color: orange"
+                          ></i>
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              Voucher dịch vụ chăm sóc da mặt công nghệ mới
+                            </h5>
+                            <p class="card-text text-muted">
+                              05/07/19 - 31/08/19
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                        >
+                          <a
+                            href="#"
+                            style="
+                              text-decoration: none;
+                              color: black;
+                              margin-right: -100px;
+                            "
+                            >Chi tiết ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div
+                      class="card mb-3"
+                      style="border-radius: 0px; margin-top: -20px"
+                    >
+                      <div
+                        class="row g-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            border: orange solid 2px;
+                            border-radius: 100px;
+                            margin-left: -35px;
+                          "
+                        >
+                          <i
+                            class="bi bi-pencil"
+                            style="font-size: 2rem; color: orange"
+                          ></i>
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              Voucher dịch vụ chăm sóc da mặt công nghệ mới
+                            </h5>
+                            <p class="card-text text-muted">
+                              05/07/19 - 31/08/19
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                        >
+                          <a
+                            href="#"
+                            style="
+                              text-decoration: none;
+                              color: black;
+                              margin-right: -100px;
+                            "
+                            >Chi tiết ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 4 -->
+                    <div
+                      class="card mb-3"
+                      style="
+                        border-radius: 0px;
+                        margin-top: -20px;
+                        height: 184px;
+                      "
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="coupon" role="tabpanel">
+                  <div class="row"></div>
+                  <div
+                    class="tab-pane fade show active"
+                    id="voucher"
+                    role="tabpanel"
+                    style="margin-top: -24.1px; width: 840px"
+                  >
+                    <!-- 1 -->
+
+                    <div
+                      class="card mb-3"
+                      style="
+                        border-radius: 0px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                      "
+                    >
+                      <div
+                        class="row g-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            border: orange solid 2px;
+                            border-radius: 100px;
+                            margin-left: -35px;
+                          "
+                        >
+                          <img
+                            src="img/icon/home-icon-2.png"
+                            alt=""
+                            style="width: 30px"
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              Coupon giảm 50% dịch vụ da mặt công nghệ mới
+                            </h5>
+                          </div>
+                        </div>
+                        <div
+                          class="col-2 d-flex align-items-center justify-content-center"
+                        >
+                          <a
+                            href="#"
+                            style="
+                              text-decoration: none;
+                              color: black;
+                              margin-right: -100px;
+                            "
+                            >Chi tiết ></a
+                          >
+                        </div>
+                      </div>
+
+                      <!-- 2 -->
+
+                      <div
+                        class="tab-pane fade show active"
+                        id="voucher"
+                        role="tabpanel"
+                        style="margin-top: -17px; width: 840px"
+                      >
+                        <div
+                          class="card mb-3"
+                          style="
+                            border-radius: 0px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                          "
+                        >
+                          <div
+                            class="row g-0 d-flex align-items-center justify-content-center"
+                          >
+                            <div
+                              class="col-2 d-flex align-items-center justify-content-center"
+                              style="
+                                width: 60px;
+                                height: 60px;
+                                border: orange solid 2px;
+                                border-radius: 100px;
+                                margin-left: -35px;
+                              "
+                            >
+                              <img
+                                src="img/icon/home-icon-2.png"
+                                alt=""
+                                style="width: 30px"
+                              />
+                            </div>
+                            <div class="col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Coupon giảm 50% dịch vụ da mặt công nghệ mới
+                                </h5>
+                              </div>
+                            </div>
+                            <div
+                              class="col-2 d-flex align-items-center justify-content-center"
+                            >
+                              <a
+                                href="#"
+                                style="
+                                  text-decoration: none;
+                                  color: black;
+                                  margin-right: -100px;
+                                "
+                                >Chi tiết ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 3333 -->
+                       
+                      <div
+                        class="tab-pane fade show active"
+                        id="voucher"
+                        role="tabpanel"
+                        style="margin-top: -17px; width: 840px"
+                      >
+                        <div
+                          class="card mb-3"
+                          style="
+                            border-radius: 0px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                          "
+                        >
+                          <div
+                            class="row g-0 d-flex align-items-center justify-content-center"
+                          >
+                            <div
+                              class="col-2 d-flex align-items-center justify-content-center"
+                              style="
+                                width: 60px;
+                                height: 60px;
+                                border: orange solid 2px;
+                                border-radius: 100px;
+                                margin-left: -35px;
+                              "
+                            >
+                              <img
+                                src="img/icon/home-icon-2.png"
+                                alt=""
+                                style="width: 30px"
+                              />
+                            </div>
+                            <div class="col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Coupon giảm 50% dịch vụ da mặt công nghệ mới
+                                </h5>
+                              </div>
+                            </div>
+                            <div
+                              class="col-2 d-flex align-items-center justify-content-center"
+                            >
+                              <a
+                                href="#"
+                                style="
+                                  text-decoration: none;
+                                  color: black;
+                                  margin-right: -100px;
+                                "
+                                >Chi tiết ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="card mb-3"
+                        style="
+                          border-radius: 0px;
+                          margin-top: -20px;
+                          height: 184px;
+                        "
+                      ></div>
+
+                      <!-- <div class="tab-pane fade" id="points" role="tabpanel">
+                        <p>Hiển thị thông tin điểm tại đây.</p>
+                        <div>fsadddddddddddddddddddddddddddddd</div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="js/load.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
+</html>
