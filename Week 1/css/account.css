@@ -133,3 +133,11 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* history */
+.table-custom .tbody {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
