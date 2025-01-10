@@ -1,287 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="css/account.css" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style></style>
   </head>
 
   <body>
-    <div id="header-placeholder"></div>
-    <hr
-      style="
-        height: 5px;
-        border: none;
-        background-color: rgb(243, 169, 31);
-        margin-top: 0px;
-        margin-bottom: 0px;
-      "
-    />
-
-    <div class="container-fluid bg-light">
-      <!-- Breadcrumb -->
-      <div class="row py-3 px-4">
-        <p class="mb-0">Trang chủ > Tài khoản</p>
-      </div>
-
-      <!-- Main Content -->
-      <div class="row" style="min-height: 740px">
-        <!-- Left Sidebar -->
-        <div class="col-md-4">
-          <ul class="list-group shadow" style="border-radius: 5px">
-            <li class="list-group-item bg-orange text-white fw-bold">
-              Thông tin tài khoản
-            </li>
-            <li class="list-group-item text-orange">
-              <img
-                src="/Week_1/resource/image/icon/avt-demo2.png"
-                alt="icon"
-                class="me-2"
-              />
-              Thông tin cá nhân
-            </li>
-            <li class="list-group-item">
-              <img
-                src="/Week_1/resource/image/icon/avt-demo2.png"
-                alt="icon"
-                class="me-2"
-              />
-              Thông tin bảo mật
-            </li>
-            <li class="list-group-item">
-              <img
-                src="/Week_1/resource/image/icon/avt-demo2.png"
-                alt="icon"
-                class="me-2"
-              />
-              Thông tin ví
-            </li>
-            <li class="list-group-item">
-              <img
-                src="/Week_1/resource/image/icon/avt-demo2.png"
-                alt="icon"
-                class="me-2"
-              />
-              Lịch sử giao dịch
-            </li>
-            <li class="list-group-item">
-              <img
-                src="/Week_1/resource/image/icon/avt-demo2.png"
-                alt="icon"
-                class="me-2"
-              />
-              Điều khoản sử dụng
-            </li>
-            <li class="list-group-item">
-              <img
-                src="/Week_1/resource/image/icon/avt-demo2.png"
-                alt="icon"
-                class="me-2"
-              />
-              Hướng dẫn sử dụng
-            </li>
-            <li class="list-group-item" style="border-radius: 0 0 5px 5px">
-              <img
-                src="/Week_1/resource/image/icon/avt-demo2.png"
-                alt="icon"
-                class="me-2"
-              />
-              Đăng xuất
-            </li>
-          </ul>
-        </div>
-
-        <!-- Right Content -->
-        <div class="col-md-8">
-          <div
-            style="
-              border-radius: 4px;
-              background-color: white;
-              height: 85%;
-              width: 90%;
-              border: none;
-              box-shadow: 0 0 1px black;
-              margin-top: -30px;
-            "
-          >
-            <!-- Shared Layout Section -->
-            <div
-              class="shared-layout"
-              style="
-                background-color: #f7f7f7;
-                padding: 10px 20px;
-                border-bottom: 1px solid #ddd;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <h5 style="margin: 0; font-size: 18px; font-weight: bold">
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-md-3">
+            <ul class="list-group shadow" style="border-radius: 5px; height: auto">
+              <li class="list-group-item bg-orange text-white fw-bold">
+                Thông tin tài khoản
+              </li>
+              <li class="list-group-item text-orange" data-target="#personal-info">
+                <i class="bi bi-person-circle"></i>
                 Thông tin cá nhân
-              </h5>
-              <p style="margin: 0; font-size: 14px; color: #888">
-                Dữ liệu của bạn được bảo mật
-              </p>
+              </li>
+              <li class="list-group-item" data-target="#security-info">
+                <i class="bi bi-key"></i>
+                Thông tin bảo mật
+              </li>
+              <li class="list-group-item" data-target="#wallet-info">
+                <i class="bi bi-wallet2"></i>
+                Thông tin ví
+              </li>
+              <li class="list-group-item" data-target="#transaction-history">
+                <i class="bi bi-clock-history"></i>
+                Lịch sử giao dịch
+              </li>
+              <li class="list-group-item" data-target="#terms-of-use">
+                <i class="bi bi-shield-check"></i>
+                Điều khoản sử dụng
+              </li>
+              <li class="list-group-item" data-target="#user-guide">
+                <i class="bi bi-journal-text"></i>
+                Hướng dẫn sử dụng
+              </li>
+              <li class="list-group-item" data-target="#logout">
+                <i class="bi bi-box-arrow-left"></i>
+                Đăng xuất
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Right Content -->
+          <div class="col-md-9">
+            <div id="personal-info" class="content-tab">
+              <h3>Thông tin cá nhân</h3>
+              <p>Chi tiết về thông tin cá nhân sẽ hiển thị tại đây.</p>
             </div>
-
-            <!-- Wrapper Container -->
-            <div
-              class="profile-container"
-              style="display: flex; gap: 20px; padding: 20px"
-            >
-              <!-- Form Section -->
-              <div class="form-section" style="flex: 1">
-                <form>
-                  <div class="row mb-3">
-                    <label for="name" class="col-sm-4 col-form-label text-end">
-                      <b>Họ và tên</b>
-                    </label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="name" />
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <label for="id" class="col-sm-4 col-form-label text-end">
-                      <b>Số CMND/CCCD</b>
-                    </label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="id" />
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <label class="col-sm-4 col-form-label text-end">
-                      <b>Ngày sinh</b>
-                    </label>
-                    <div class="col-sm-8 d-flex gap-2">
-                      <input
-                        type="number"
-                        class="form-control"
-                        placeholder="Ngày"
-                      />
-                      <input
-                        type="number"
-                        class="form-control"
-                        placeholder="Tháng"
-                      />
-                      <input
-                        type="number"
-                        class="form-control"
-                        placeholder="Năm"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <label class="col-sm-4 col-form-label text-end">
-                      <b>Giới tính</b>
-                    </label>
-                    <div class="col-sm-8 d-flex align-items-center">
-                      <div class="form-check me-3">
-                        <input
-                          type="radio"
-                          name="sex"
-                          id="male"
-                          class="form-check-input"
-                        />
-                        <label for="male" class="form-check-label">Nam</label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          type="radio"
-                          name="sex"
-                          id="female"
-                          class="form-check-input"
-                        />
-                        <label for="female" class="form-check-label">Nữ</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <label for="phone" class="col-sm-4 col-form-label text-end">
-                      <b>Số điện thoại</b>
-                    </label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="phone" />
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <label for="email" class="col-sm-4 col-form-label text-end">
-                      <b>Email</b>
-                    </label>
-                    <div class="col-sm-8">
-                      <input type="email" class="form-control" id="email" />
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <label
-                      for="address"
-                      class="col-sm-4 col-form-label text-end"
-                    >
-                      <b>Địa chỉ</b>
-                    </label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="address" />
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-sm-4"></div>
-                    <!-- Cột trống để căn chỉnh -->
-                    <div class="col-sm-8 text-start">
-                      <button type="submit" class="btn btn-primary w-50">
-                        Lưu
-                      </button>
-                      <p style="margin-top: 15px; font-size: 14px">
-                        <img
-                          src="/Week_1/resource/image/icon/icon/stick-3.png"
-                          alt=""
-                        />
-                        Thông tin cá nhân của quý khách được đảm bảo an toàn
-                      </p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-              <!-- Image Section -->
-              <div
-                class="image-section"
-                style="width: 280px; text-align: center"
-              >
-                <div
-                  style="
-                    width: 100%;
-                    height: 85%;
-                    border: none;
-                    border-left: gray solid 1px;
-                    padding-left: 20px;
-                  "
-                >
-                  <img
-                    src="/img/ava-demo.png"
-                    alt=""
-                    style="width: 190px; height: 190px; margin-bottom: 20px"
-                  />
-                  <button class="btn btn-secondary">Chọn ảnh</button>
-                  <p style="margin-top: 20px">Dung lượng file tối đa là 1MB</p>
-                  <p style="margin-top: -10px">Định dạng file là: JEG, PNG</p>
-                </div>
-              </div>
+            <div id="security-info" class="content-tab" style="display: none">
+              <h3>Thông tin bảo mật</h3>
+              <p>Chi tiết về thông tin bảo mật sẽ hiển thị tại đây.</p>
+            </div>
+            <div id="wallet-info" class="content-tab" style="display: none">
+              <h3>Thông tin ví</h3>
+              <p>Chi tiết về thông tin ví sẽ hiển thị tại đây.</p>
+            </div>
+            <div id="transaction-history" class="content-tab" style="display: none">
+              <h3>Lịch sử giao dịch</h3>
+              <p>Chi tiết về lịch sử giao dịch sẽ hiển thị tại đây.</p>
+            </div>
+            <div id="terms-of-use" class="content-tab" style="display: none">
+              <h3>Điều khoản sử dụng</h3>
+              <p>Nội dung điều khoản sử dụng sẽ hiển thị tại đây.</p>
+            </div>
+            <div id="user-guide" class="content-tab" style="display: none">
+              <h3>Hướng dẫn sử dụng</h3>
+              <p>Chi tiết về hướng dẫn sử dụng sẽ hiển thị tại đây.</p>
+            </div>
+            <div id="logout" class="content-tab" style="display: none">
+              <h3>Đăng xuất</h3>
+              <p>Chức năng đăng xuất sẽ hiển thị tại đây.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="footer-placeholder"></div>
+      
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const listItems = document.querySelectorAll(
+          ".list-group-item[data-target]"
+        );
+        const contentTabs = document.querySelectorAll(".content-tab");
+
+        listItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            // Remove active class from all items
+            listItems.forEach((i) => i.classList.remove("active"));
+
+            // Add active class to clicked item
+            this.classList.add("active");
+
+            // Hide all content tabs
+            contentTabs.forEach((tab) => (tab.style.display = "none"));
+
+            // Show the targeted content tab
+            const targetId = this.getAttribute("data-target");
+            const targetTab = document.querySelector(targetId);
+            if (targetTab) targetTab.style.display = "block";
+          });
+        });
+      });
+    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -53,3 +53,83 @@
 .btn-orange:hover {
   background-color: darkorange;
 }
+
+/* ____ */
+.custom-container {
+  width: 70%; /* Chiều rộng container */
+  max-width: 100%; /* Đảm bảo không vượt quá màn hình */
+  border: none; /* Tùy chọn: viền container */
+  border-radius: 5px; /* Bo góc */
+  min-height: 650px; /* Độ dài tối thiểu */
+  margin-top: 50px;
+}
+
+.list-group-item.active {
+  color: orange;
+  border-bottom: 1px dashed #f1efef;
+  border-top: 1px dashed #f1efef;
+  border-left: none;
+  border-right: none;
+  background-color: #f1efef;
+}
+.list-group-item {
+  border-bottom: 1px dashed #f1efef;
+}
+.dynamic-content {
+  display: inline-block; /* Đảm bảo kích thước theo nội dung */
+  width: auto; /* Loại bỏ chiều rộng cố định */
+  padding: 10px; /* Thêm khoảng cách bên trong nếu cần */
+  border: 1px solid #ddd; /* Viền tùy chọn */
+  border-radius: 5px; /* Bo góc */
+  background: #f9f9f9; /* Nền tùy chọn */
+}
+
+/* nav content */
+.custom-card {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0px;
+}
+/* Thêm nền mờ cho nút đang active */
+.nav-link.active {
+  font-weight: bold; /* Làm đậm chữ khi active */
+  background-color: rgba(0, 0, 0, 0.05); /* Nền nhẹ khi hover */
+}
+
+/* Hiệu ứng nền khi hover */
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Nền nhẹ khi hover */
+}
+
+/* tab 3 */
+.khoec {
+  color: white;
+  border-radius: 50%;
+  border: 20px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.khod {
+  text-align: center;
+}
+
+.khod button {
+  border-radius: 20px;
+  padding: 5px 40px;
+  margin: 0 10px;
+}
+
+.khod .btn {
+  background-color: #f1efef;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
