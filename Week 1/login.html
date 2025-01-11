@@ -1,117 +1,96 @@
-<!DOCTYPE html>
-<html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LESKIN Registration Form</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f5f5f5;
-      }
-      .container {
-        width: 300px; /* Tỷ lệ nhỏ hơn */
-        padding: 15px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        text-align: center;
-      }
-      .logo {
-        margin-bottom: 5px;
-      }
-      .tabs {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 15px;
-      }
-      .tabs div {
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 12px; /* Kích thước nhỏ hơn */
-      }
-      .tabs .active {
-        color: #d4a017;
-      }
-      .input-group {
-        margin-bottom: 15px;
-      }
-      .input-group input {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 12px; /* Kích thước nhỏ hơn */
-      }
-      .button {
-        background-color: orange;
-        color: #fff;
-        padding: 8px;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        width: 100%;
-        font-size: 12px; /* Kích thước nhỏ hơn */
-        margin-bottom: 40px;
-      }
-      .container {
-        background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gold-yellow-gradient-studio-wall-well-use-as-backgroundlayoutbanner-product-pres_1258-52739.jpg?semt=ais_hybrid"); /* Đường dẫn tới hình ảnh */
-      }
-      .logo img {
-        width: 200px;
-        padding: 50px 70px 50px 60px;
-      }
+<style>
+  .logo {
+    margin-bottom: 5px;
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  .tabs div {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px; /* Kích thước nhỏ hơn */
+  }
+  .tabs .active {
+    color: #d4a017;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px; /* Kích thước nhỏ hơn */
+  }
+  .button {
+    background-color: orange;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px; /* Kích thước nhỏ hơn */
+    margin-bottom: 40px;
+  }
+  .container {
+    /* Đường dẫn tới hình ảnh */
+  }
+  .logo img {
+    width: 200px;
+    padding: 50px 70px 50px 60px;
+  }
 
-      /* #2 */
-      .input-with-icon {
-        display: flex;
-        align-items: center;
-        border-radius: 20px;
-        width: 280px;
-        padding: 10px;
-        margin-bottom: 20px;
-        background-color: white;
-      }
-      .input-with-icon i {
-        margin-right: 10px; /* Khoảng cách giữa icon và input */
-        color: black; /* Màu đen cho icon */
-      }
-      .input-with-icon input {
-        border: none;
-        outline: none;
-        flex: 1; /* Để input chiếm phần còn lại */
-      }
-    </style>
-    <div class="container">
-      <div class="logo">
-        <img src="./img/logo.png" alt="LESKIN Logo" />
-      </div>
+  /* #2 */
+  .input-with-icon {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  .input-with-icon i {
+    margin-right: 10px; /* Khoảng cách giữa icon và input */
+    color: black; /* Màu đen cho icon */
+  }
+  .input-with-icon input {
+    border: none;
+    outline: none;
+    flex: 1; /* Để input chiếm phần còn lại */
+  }
+</style>
 
-      <div class="input-with-icon">
-        <i class="fas fa-phone"></i>
-        <input type="text" placeholder="Điện thoại" />
-      </div>
-      <div class="input-with-icon">
-        <i class="fas fa-lock"></i>
-        <input type="text" placeholder="Password" />
-      </div>
-      <button class="button" style="padding: 15px 10px 15px 10px">
-        <b>ĐĂNG NHẬP</b>
-      </button>
-    </div>
-  </body>
-</html>
+<div
+  style="
+    width: 300px; /* Tỷ lệ nhỏ hơn */
+    padding: 15px;
+    background-image: url('https://img.freepik.com/free-photo/abstract-luxury-gold-yellow-gradient-studio-wall-well-use-as-backgroundlayoutbanner-product-pres_1258-52739.jpg?semt=ais_hybrid');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    top: 5px;
+    right: 20%;
+    position: absolute;
+  "
+>
+  <div class="logo">
+    <img src="./img/logo.png" alt="LESKIN Logo" />
+  </div>
+
+  <div class="input-with-icon">
+    <i class="fas fa-phone"></i>
+    <input type="text" placeholder="Điện thoại" />
+  </div>
+  <div class="input-with-icon">
+    <i class="fas fa-lock"></i>
+    <input type="text" placeholder="Password" />
+  </div>
+  <button class="button" style="padding: 15px 10px 15px 10px">
+    <b>ĐĂNG NHẬP</b>
+  </button>
+</div>

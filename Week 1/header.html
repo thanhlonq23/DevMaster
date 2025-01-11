@@ -1,103 +1,106 @@
 <header class="header-container">
-    <div
-      class="container-fluid d-flex align-items-center justify-content-between"
-    >
-      <!-- Logo -->
-      <div class="header-logo">
-        <a
-          href="#"
-          class="d-flex align-items-center text-decoration-none me-4"
-        >
-          <img
-            src="./img/logo.png"
-            alt="Website Icon"
-            class="me-2"
-            style="object-fit: cover"
-          />
-        </a>
-      </div>
-
-      <!-- Search Bar -->
-      <div class="header-search flex-grow-1 mx-3">
-        <form class="d-flex">
-          <div class="search-bar d-flex">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Nhập nội dung tìm kiếm..."
-              aria-label="Search"
-            />
-            <button type="submit" class="px-3">
-              <i class="bi bi-search"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <!-- Navigation Menu -->
-      <div class="header-nav">
-        <ul class="nav d-flex me-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <div class="icon-text">
-                <i class="bi bi-house-door"></i>
-                <span>Trang chủ</span>
-              </div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <div class="icon-text">
-                <i class="bi bi-info-circle"></i>
-                <span>Giới thiệu</span>
-              </div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <div class="icon-text">
-                <i class="bi bi-gift"></i>
-                <span>Ưu đãi</span>
-              </div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <div class="icon-text">
-                <i class="bi bi-megaphone"></i>
-                <span>Tin tức</span>
-              </div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <div class="icon-text">
-                <i class="bi bi-envelope"></i>
-                <span>Liên hệ</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Auth Buttons -->
-      <div class="header-auth">
-        <button
-          class="button-login btn btn-outline-light"
-          style="background-color: orange"
-        >
-          Đăng nhập
-        </button>
-        <button
-          class="button-signup btn btn-light me-2"
-          style="
-            color: orange;
-            background-color: inherit;
-            border-color: orange;
-          "
-        >
-          Đăng ký
-        </button>
-      </div>
+  <div
+    class="container-fluid d-flex align-items-center justify-content-between"
+  >
+    <!-- Logo -->
+    <div class="header-logo">
+      <a href="#" class="d-flex align-items-center text-decoration-none me-4">
+        <img
+          src="./img/logo.png"
+          alt="Website Icon"
+          class="me-2"
+          style="object-fit: cover"
+        />
+      </a>
     </div>
-  </header>
+
+    <!-- Search Bar -->
+    <div class="header-search flex-grow-1 mx-3">
+      <form class="d-flex">
+        <div class="search-bar d-flex">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nhập nội dung tìm kiếm..."
+            aria-label="Search"
+          />
+          <button type="submit" class="px-3">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="header-nav">
+      <ul class="nav d-flex me-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="icon-text">
+              <i class="bi bi-house-door"></i>
+              <span>Trang chủ</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="icon-text">
+              <i class="bi bi-info-circle"></i>
+              <span>Giới thiệu</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="icon-text">
+              <i class="bi bi-gift"></i>
+              <span>Ưu đãi</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="icon-text">
+              <i class="bi bi-megaphone"></i>
+              <span>Tin tức</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <div class="icon-text">
+              <i class="bi bi-envelope"></i>
+              <span>Liên hệ</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Auth Buttons -->
+    <div class="header-auth">
+      <button
+        class="button-login btn btn-outline-light"
+        style="background-color: orange"
+        onclick="openPopup('login')"
+      >
+        Đăng nhập
+      </button>
+      <button
+        class="button-signup btn btn-light me-2"
+        style="color: orange; background-color: inherit; border-color: orange"
+        onclick="openPopup('signup')"
+      >
+        Đăng ký
+      </button>
+    </div>
+
+    <link rel="stylesheet" href="/css/popup.css" />
+
+    <div id="popup-container" class="popup-container hidden">
+      <span class="close-popup" onclick="closePopup()" style="color: white"
+        ><i class="bi bi-x-circle"></i
+      ></span>
+      <div class="popup-content"></div>
+    </div>
+  </div>
+</header>

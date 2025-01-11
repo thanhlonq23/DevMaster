@@ -6,6 +6,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
 }
+.brand-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-right: 8%;
+}
 .brand-item {
   margin-bottom: 15px;
 }
@@ -75,6 +82,8 @@
   position: relative;
   left: 0;
   bottom: 0;
+  padding-top: 3%;
+  padding-bottom: 4%;
 }
 
 .footer-2 {
@@ -94,7 +103,7 @@
   margin: auto;
   border-radius: 5px;
   overflow: hidden; /* Đảm bảo viền liền mạch */
-  background-color: #9e9797;
+  background-color: #413f3f;
 }
 
 /* Phong cách cho input */
@@ -103,11 +112,12 @@
   padding: 10px 15px;
   border: none; /* Loại bỏ viền gốc */
   font-size: 16px;
-  color: #333;
+  color: #413f3f;
+  background-color: #413f3f;
 }
 
 .newsletter-input::placeholder {
-  color: #9e9797;
+  color: #dbcfcf;
   font-style: italic;
 }
 

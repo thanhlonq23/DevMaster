@@ -84,5 +84,12 @@
 }
 
 .custom-card {
-  margin: 10px 40px 0px 20px;
+  margin: auto;
+  margin-bottom: 10%;
+  /* margin: 10px 40px 0px 20px; */
+}
+.custom-btn-read-more {
+  border: 1px solid orange;
+  border-radius: 10px;
+  color: orange;
 }

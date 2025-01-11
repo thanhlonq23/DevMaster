@@ -20,7 +20,7 @@ header {
   overflow: hidden; /* Đảm bảo các thành phần không vượt ra ngoài */
   display: flex; /* Để các phần tử nằm cùng dòng */
   border: 1px solid orange; /* Viền màu cam */
-  min-width: 500px;
+  min-width: 400px;
 }
 
 .search-bar input {
@@ -85,7 +85,7 @@ header {
 }
 
 .nav-item .icon-text i {
-  font-size: 35px; /* Kích thước lớn cho icon */
+  font-size: 30px; /* Kích thước lớn cho icon */
 }
 
 /* Sử dụng flexbox để căn đều các phần tử trong header */
@@ -136,4 +136,13 @@ header {
 .custom-dropdown .user-icon {
   margin-right: 10px;
   font-size: 20px;
+  background-color: #f59403;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 100%;
 }
+
+/* .container-fluid {
+  margin-left: 10%;
+  margin-right: 10%;
+} */
