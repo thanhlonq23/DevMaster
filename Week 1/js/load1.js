@@ -5,5 +5,5 @@ function loadHTML(file, elementId) {
 }
 
 // Gọi file header.html và footer.html
-loadHTML("header1.html", "header-container");
-loadHTML("footer.html", "footer-container");
+loadHTML("layout/header1.html", "header-container");
+loadHTML("layout/footer.html", "footer-container");
